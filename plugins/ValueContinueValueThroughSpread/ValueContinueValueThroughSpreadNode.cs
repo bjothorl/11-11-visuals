@@ -24,7 +24,7 @@ namespace VVVV.Nodes
 		[Input("spread n", DefaultValue = 1.0, IsSingle = true)]
 		public ISpread<int> FSpreadN;
 
-		[Input("multiplier", DefaultValue = 1.0, IsSingle = true)]
+		[Input("multiplier", DefaultValue = 0.5, IsSingle = true)]
 		public ISpread<double> FMult;
 		
 		[Output("Output")]
@@ -43,7 +43,7 @@ namespace VVVV.Nodes
 			for (int i = 0; i < slices; i++) {
 				double val = FInput[0]-i;
 //				val += FMult[0]*(i+1);
-				FOutput[i] = Math.Max(Math.Min(val,1),0);
+				FOutput[i] = Math.Max(Math.Min(val,1),0)*FMult[0];
 //				FOutput[i] = val;
 			}
 

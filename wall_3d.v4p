@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
-   <PATCH nodename="C:\Users\weare\Documents\vvvv\11-11\wall_3d.v4p" systemname="wall_3d" filename="C:\Users\bjornthorlacius\Documents\vvvv\projects\11-11\wall_3d.v4p" scrollx="90" scrolly="1185">
-   <BOUNDS type="Window" left="4305" top="870" width="9030" height="10665">
+   <PATCH nodename="C:\Users\bjornthorlacius\Documents\vvvv\projects\11-11-visuals\wall_3d.v4p" systemname="wall_3d" filename="C:\Users\bjornthorlacius\Documents\vvvv\projects\11-11\wall_3d.v4p" scrollx="30" scrolly="2310">
+   <BOUNDS type="Window" left="2280" top="2655" width="9030" height="10665">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="addonpack" Version="42.0.0">
    </PACK>
    <NODE systemname="wall_grid" filename="wall_grid.v4p" componentmode="Hidden" id="27" nodename="wall_grid.v4p">
-   <BOUNDS type="Node" left="1530" top="6675" width="100" height="100">
+   <BOUNDS type="Node" left="1530" top="6840" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1530" top="6675" width="4800" height="4800">
+   <BOUNDS type="Box" left="1530" top="6840" width="4800" height="4800">
    </BOUNDS>
    <BOUNDS type="Window" left="17625" top="6255" width="5220" height="7935">
    </BOUNDS>
@@ -24,6 +24,10 @@
    <PIN pinname="add shadows" visible="1">
    </PIN>
    <PIN pinname="invert x" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="sound input" visible="1">
+   </PIN>
+   <PIN pinname="col" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="wall_grid" filename="wall_grid.v4p" componentmode="InAWindow" id="28" nodename="wall_grid.v4p">
@@ -43,17 +47,11 @@
    </PIN>
    <PIN pinname="add shadows" visible="1" slicecount="1" values="0">
    </PIN>
-   </NODE>
-   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="1650" top="555" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
+   <PIN pinname="sound input" visible="1">
    </PIN>
-   <PIN pinname="Z" slicecount="1" values="0">
+   <PIN pinname="col" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" visible="1" values="0.12">
-   </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   <PIN pinname="invert x" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="33">
@@ -77,9 +75,9 @@
    <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="28" dstpinname="Transform In">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
-   <BOUNDS type="Node" left="2490" top="4065" width="100" height="100">
+   <BOUNDS type="Node" left="2955" top="3960" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2490" top="4065" width="795" height="780">
+   <BOUNDS type="Box" left="2955" top="3960" width="795" height="780">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -149,9 +147,9 @@
    <LINK srcnodeid="39" srcpinname="Layer" dstnodeid="40" dstpinname="Input Node">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="41">
-   <BOUNDS type="Node" left="5145" top="3375" width="100" height="100">
+   <BOUNDS type="Node" left="8730" top="4860" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5145" top="3375" width="480" height="480">
+   <BOUNDS type="Box" left="8730" top="4860" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -195,13 +193,49 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|add shadows|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="27" dstpinname="add shadows">
    </LINK>
    <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="28" dstpinname="add shadows">
    </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
+   <BOUNDS type="Node" left="5070" top="3765" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5070" top="3765" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|sound input|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="28" dstpinname="sound input">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="27" dstpinname="sound input">
+   </LINK>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="45">
+   <BOUNDS type="Node" left="6360" top="3570" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6360" top="3570" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="col">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Color Output" dstnodeid="28" dstpinname="col">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Color Output" dstnodeid="27" dstpinname="col">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="4185" top="2955" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4185" top="2955" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|light move in|">
+   </PIN>
+   </NODE>
    </PATCH>

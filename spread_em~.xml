@@ -1,0 +1,517 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="C:\Users\bjornthorlacius\Documents\vvvv\projects\11-11-visuals\spread_em.v4p" scrollx="6960" scrolly="3180" systemname="spread_em" filename="C:\Users\bjornthorlacius\Documents\vvvv\projects\11-11-visuals\spread_em.v4p">
+   <BOUNDS type="Window" left="3570" top="1635" width="17325" height="9000">
+   </BOUNDS>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="600" top="2340" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="2340" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   <PIN pinname="multiplier" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="585" top="1395" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="585" top="1395" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Stallone (Spreads)" nodename="Stallone (Spreads)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1065" top="795" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   <PIN pinname="Output 6" visible="1">
+   </PIN>
+   <PIN pinname="Output 7" visible="1">
+   </PIN>
+   <PIN pinname="Output 8" visible="1">
+   </PIN>
+   <PIN pinname="Output 9" visible="1">
+   </PIN>
+   <PIN pinname="Output 10" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output 1" dstnodeid="0" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2985" top="2385" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2985" top="2385" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Node" left="2940" top="1425" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2940" top="1425" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 2" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="5400" top="2445" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5400" top="2445" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="5355" top="1485" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5355" top="1485" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 3" dstnodeid="10" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="6585" top="4350" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6585" top="4350" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="6570" top="3405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6570" top="3405" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="8970" top="4395" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8970" top="4395" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
+   <BOUNDS type="Node" left="8925" top="3435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8925" top="3435" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="11385" top="4455" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11385" top="4455" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="11340" top="3495" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11340" top="3495" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 4" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 5" dstnodeid="14" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 6" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="13065" top="7140" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13065" top="7140" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   <PIN pinname="multiplier" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="13110" top="6105" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13110" top="6105" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="15450" top="7185" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15450" top="7185" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   <PIN pinname="multiplier" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="15405" top="6225" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15405" top="6225" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Input">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="17865" top="7245" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17865" top="7245" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   <PIN pinname="multiplier" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Node" left="17820" top="6285" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17820" top="6285" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 7" dstnodeid="22" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 8" dstnodeid="20" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 9" dstnodeid="18" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="ContinueValueThroughSpread (Value)" filename="plugins\ValueContinueValueThroughSpread\ValueContinueValueThroughSpread.csproj" nodename="ContinueValueThroughSpread (Value)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="20370" top="9480" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="20370" top="9480" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="spread n" visible="1" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="4.89">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="20325" top="8520" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="20325" top="8520" width="675" height="825">
+   </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="17">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14.1459854014599">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 10" dstnodeid="24" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="540" top="2895" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="540" top="2895" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="26" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="3135" top="2880" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3135" top="2880" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="29" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
+   <BOUNDS type="Node" left="5445" top="2955" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5445" top="2955" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="30" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Node" left="6540" top="5040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6540" top="5040" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out4">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
+   <BOUNDS type="Node" left="9135" top="5025" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9135" top="5025" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out5">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
+   <BOUNDS type="Node" left="11445" top="5100" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11445" top="5100" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out6">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="33" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="32" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="31" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
+   <BOUNDS type="Node" left="13545" top="7755" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13545" top="7755" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out7">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
+   <BOUNDS type="Node" left="16035" top="7740" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16035" top="7740" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out8">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="18450" top="7815" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18450" top="7815" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out9">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="37" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="36" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
+   <BOUNDS type="Node" left="20565" top="10020" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="20565" top="10020" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out10">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="39" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="40">
+   <BOUNDS type="Node" left="975" top="210" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="975" top="210" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="in">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Input 1">
+   </LINK>
+   </PATCH>
